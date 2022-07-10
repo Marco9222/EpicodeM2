@@ -1,0 +1,29 @@
+.rosso {
+color:red;
+border:solid 2px black;
+}
+
+.tabella{
+    display:flex;
+}
+
+#titolo{
+    text-align:center;
+}
+
+#footer{
+    text-align:center;
+}
+
+.visibility{
+    display:none;
+}
+
+li {
+    border:solid 1px black;
+}
+
+ul {
+    border:solid 1px black;
+}
+
