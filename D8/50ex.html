@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<!--
+        ESERCIZI HTML
+
+        1) Assegna un titolo per questa pagina OK
+        2) Crea un tag h1 con il contenuto che preferisci OK
+        3) Crea una lista ordinata con alcuni elementi al suo interno OK
+        4) Crea una tabella con 4 righe e 5 colonne OK
+        5) Aggiungi un'immagine a ogni seconda cella di ogni riga OK
+        6) Aggiungi un tag <a> ad ogni immagine OK
+        7) Unisci insieme 2 celle della tabella OK
+        8) Dividi la pagina inserendo una riga orizzontale OK
+        9) Crea un elemento contenitore con al suo interno un paragrafo 
+        e una lista non ordinata OK
+        10) Crea un footer contenente alcune informazioni sul 
+        creatore della pagina OK
+
+        ESERCIZI CSS
+
+        11) Assegna una larghezza massima al tag body e centralo nella pagina OK
+        12) Centra ogni tag h1 OK
+        13) Cambia il colore di ogni link nella pagina OK
+        14) Crea una classe e assegnale un bordo OK
+        15) Fai in modo che la i bordi della tabella che hai creato 
+        siano arrotondati OK
+        16) Aggiungi un margine ad ogni paragrafo OK
+        17) Crea una classe che una volta assegnata cambi 
+        la dimensione e il peso del font OK
+        18) Crea una classe per nascondere un elemento OK
+        19) Aggiungi un bordo verde a ogni <td> OK
+        20) Aggiungi un bordo puntato rosso a ogni <tr> 
+          (nota: <tr> non accetta una proprietà "border") OK
+
+        ESERCIZI JAVASCRIPT
+
+        21) Date le variabili x = "John" e y = "Doe", mostra in console "John <> Doe"
+        22) Crea un oggetto con le seguenti proprietà: name, surname, email
+        23) Cancella la proprietà email dall'oggetto appena creato
+        24) Crea un array contenente 10 stringhe
+        25) Mostra in console ogni stringa del precedente array
+        26) Crea un array contenente 100 numeri random
+        27) Scrivi una funzione per trovare il valore massimo e il valore minimo dall'array appena creato
+        28) Crea un array di array, nel quale ogni array "figlio" ha 10 numeri random
+        29) Crea una funzione che riceve 2 array come parametri e ritorni quello con più elementi
+        30) Crea una funzione che riceve 2 array numerici come parametri e ritorna quello con la somma totale degli elementi maggiore
+
+        ESERCIZI SUL DOM
+
+        31) Seleziona l'elemento con id "container" nella pagina
+        32) Seleziona tutti gli elementi di tipo <td> nella pagina
+        33) Usa un ciclo per stampare in console il testo contenuto in ogni elemento <td> nella pagina
+        34) Scrivi una funzione per cambiare il titolo della pagina
+        35) Scrivi una funzione per aggiungere una nuova riga alla tabella nella pagina
+        36) Scrivi una funzione per aggiungere la classe "test" ad ogni riga nella tabella
+        37) Scrivi una funzione per aggiungere uno sfondo rosso a ogni link presente nella pagina
+        38) Mostra in console "Page loaded" quando la pagina ha finito di caricarsi
+        39) Scrivi una funzione per aggiungere nuovi elementi alla lista non ordinata nella pagina
+        40) Scrivi una funzione per svuotare una lista nella pagina
+
+        ESERCIZI EXTRA
+
+        41) Aggiungi un event listener in modo che compaia un alert 
+        quando il cursore passa sopra un link; l'alert deve mostrare la sua proprietà href
+        42) Crea un bottone che una volta cliccato nasconde ogni immagine nella pagina
+        43) Crea un bottone che una volta cliccato nasconde o mostra la tabella nella pagina
+        44) Crea una funzione per calcolare la somma di ogni numero 
+        contenuto in tutte le celle della tabella (se il contenuto è un numero)
+        45) Cancella l'ultima lettera dal titolo della pagina ogni volta che l'utente ci clicca sopra
+        46) Aggiungi un event listener in modo che cliccando un <td> nella pagina,
+          questo cambi colore di sfondo
+        47) Aggiungi un bottone che una volta cliccato elimini un <td> a caso nella tabella
+        48) Aggiungi automaticamente un bordo rosa ad una cella della tabella quando il cursore ci passa sopra
+        49) Scrivi una funzione per creare una tabella con 4 righe e 3 colonne e aggiungerla alla fine della pagina
+        50) Scrivi una funzione per rimuovere l'ultima tabella presente nella pagina
+        
+    -->
+<link rel="stylesheet" href="50exCSS.css">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+  <title id="title">esercizio riassuntivo</title>
+</head>
+
+<body cz-shortcut-listen="true">
+  <h1>Esercizio riassuntivo</h1>
+
+  <ol>
+    <li>Utilizzo di HTML</li>
+    <li>Utilizzo di CSS</li>
+    <li>Utilizzo di JavaScript</li>
+    <li>Applicazioni dei linguaggi</li>
+  </ol>
+
+  <table class="tabella" id="tabella">
+    <tr class="riga bordorosso">
+      <td class="bordoverde">Cella1</td>
+      <td>
+        <img class="img" src="immagine1.jpg">
+        <a href="#">Link</a>
+      </td>
+      <td class="bordoverde">Cella2</td>
+      <td class="bordoverde">Cella3</td>
+      <td class="bordoverde"> Cella4</td>
+    </tr>
+    <tr class="riga bordorosso">
+      <td class="bordoverde">Cella5</td>
+      <td>
+        <img class="img" src="immagine1.jpg">
+        <a href="#">Link</a>
+      </td>
+      <td class="bordoverde">Cella6</td>
+      <td class="bordoverde">Cella7 Cella8</td>
+    </tr>
+    <tr class="riga bordorosso">
+      <td class="bordoverde">Cella9</td>
+      <td>
+        <img class="img" src="immagine1.jpg">
+        <a href="#">Link</a>
+      </td>
+      <td class="bordoverde">Cella10</td>
+      <td class="bordoverde">Cella11</td>
+      <td class="bordoverde">Cella12</td>
+    </tr>
+    <tr class="riga bordorosso">
+      <td class="bordoverde">Cella13</td>
+      <td>
+        <img class="img" src="immagine1.jpg">
+        <a href="#">Link</a>
+      </td>
+      <td class="bordoverde">Cella14</td>
+      <td class="bordoverde"> Cella15</td>
+      <td class="bordoverde">Cella16</td>
+    </tr>
+
+  </table>
+
+  <br>
+  <br>
+  <hr>
+
+  <div id="container">
+    <p class="carattere nascosto">Questo è un paragrafo</p>
+    <ul id="nonord">
+      <li>elemento 1</li>
+      <li>elemento 2</li>
+      <li>elemento 3</li>
+    </ul>
+  </div>
+
+  <button onclick="changeTitle()">Pulsante cambio titolo</button>
+  <button onclick="addRow()">Pulsante aggiungi riga</button>
+  <button onclick="addClass()">Pulsante aggiungi classe</button>
+  <button onclick="addBackground()">Pulsante cambia link</button>
+  <button onclick="addLi()">Pulsante Aggiungi lista</button>
+  <button onclick="svuotaLista()">Pulsante svuota lista</button>
+
+  <footer>Marco Dal Tin - creazione di pagine web e tanto altro</footer>
+
+  <script>
+
+    /*21) Date le variabili x = "John" e y = "Doe", 
+    mostra in console "John <> Doe" OK */
+
+    /*let x = "John";
+    let y = "Doe";
+    console.log(x + "<>" + y);*/
+
+    /*22) Crea un oggetto con le seguenti proprietà: name, surname, email OK*/
+
+    /*let studente = {
+      name: "marco",
+      surname: "dal tin",
+      email: "marco.daltin@yahoo.it",
+    };*/
+
+    /*23) Cancella la proprietà email dall'oggetto appena creato OK */
+
+    /*delete studente.email;
+    console.log(studente);*/
+
+    /*24) Crea un array contenente 10 stringhe OK */
+
+    /*let arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "l"];*/
+
+    /*25) Mostra in console ogni stringa del precedente array RIVEDERE */
+
+    /*for (let i = 0; i++; i <= arr.length) {
+      console.log(arr[i]);
+    };*/
+
+    /*console.log(arr);*/
+
+    /*26) Crea un array contenente 100 numeri random RIVEDERE */
+
+    /*let arr2 = [];
+    for (let i = 0; i++; i <= 99) {
+      arr2.push(Math.random());
+    };
+
+    console.log(arr2);*/
+
+    /*27) Scrivi una funzione per trovare il valore massimo e il valore minimo 
+    dall'array appena creato VEDERE */
+
+    /*28) Crea un array di array, nel quale ogni 
+    array "figlio" ha 10 numeri random VEDERE */
+
+    /*let arr3 = [
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    ]*/
+
+    /*29) Crea una funzione che riceve 2 array come parametri 
+    e ritorni quello con più elementi OK */
+
+    /*let arr4 = [0, 1, 2, 3, 4, 30];
+    let arr5 = [0, 1, 2, 3, 4, 5, 6];
+
+    function array(arr4, arr5) {
+      let x = arr4.length;
+      let y = arr5.length;
+      if (x > y) {
+        return "arr4 ha più elementi"
+      }
+      else {
+        return "arr5 ha più elementi"
+      }
+    };
+
+    console.log(array(arr4, arr5));*/
+
+    /*30) Crea una funzione che riceve 2 array numerici come 
+    parametri e ritorna quello con la somma totale degli elementi maggiore OK */
+
+    /*function arrayMag(arr4, arr5) {
+      let arr4tot = 0;
+      for (var i = 0; i < arr4tot.length; i++) {
+        arr4tot += arr4[i];
+      }
+      let arr5tot = 0;
+      for (var i = 0; i < arr5tot.length; i++) {
+        arr5tot += arr4[i];
+      }
+      if (arr4tot < arr5tot) {
+        return "arr5 ha somma elementi maggiore";
+      } else {
+        return "arr4 ha somma elementi maggiore";
+      }
+    };
+
+    console.log(arrayMag(arr4, arr5));*/
+
+    /*ESERCIZI SUL DOM*/
+    
+    /* 31) Seleziona l'elemento con id "container" nella pagina OK*/
+
+    /*let cont = document.getElementById("container");*/
+
+    /*32) Seleziona tutti gli elementi di tipo <td> nella pagina */
+
+    /*const allTd = document.getElementsByTagName("td");*/
+
+    /*33) Usa un ciclo per stampare in console il testo contenuto in ogni 
+            elemento <td> nella pagina OK*/
+
+    /*let elements = Array.from(allTd);
+    for (let i = 0; i <= elements.length; i++) {
+      console.log(elements[i].innerHTML);
+    };*/
+
+    /*34) Scrivi una funzione per cambiare il titolo della pagina OK*/
+
+    /*function changeTitle() {
+      let title = document.getElementById("title");
+      title.innerHTML = "nuovo titolo";
+    }*/
+
+    /*35) Scrivi una funzione per aggiungere una nuova riga alla tabella 
+    nella pagina DUBBI*/
+
+    /*function addRow() {
+      const nuovaRiga = document.createElement("tr");
+      const elemento = document.getElementById("tabella");
+      
+      elemento.appendChild(nuovaRiga);
+    }*/
+
+    /*36) Scrivi una funzione per aggiungere la classe "test" 
+            ad ogni riga nella tabella*/ 
+
+  /*function addClass(){
+    let righe = document.querySelectorAll(".riga");
+    
+    for (let i = 0; i++;i<righe.lenght){
+      righe[i].classList.add("test");
+    }
+  }*/
+
+  /*37) Scrivi una funzione per aggiungere uno sfondo rosso a ogni link presente 
+            nella pagina*/
+  
+  /*function addBackground(){
+    classList.add("test");
+  };
+
+  const elements2 = document.querySelectorAll('a');
+  
+  elements2.forEach(element => {
+  classList.add("test");});*/
+
+  /*38) Mostra in console "Page loaded" quando la pagina ha finito 
+  di caricarsi OK*/ 
+
+  /*let caricamento = function messaggio(){
+    console.log("Page loaded");
+  }
+
+  window.onload(caricamento());*/
+
+/*39) Scrivi una funzione per aggiungere nuovi elementi alla lista non ordinata 
+          nella pagina OK*/
+
+/*function addLi(){
+  let newLi = document.createElement("li");
+  let unordered = document.getElementById("nonord");
+  unordered.appendChild(newLi);
+};*/
+
+/*40) Scrivi una funzione per svuotare una lista nella pagina OK*/
+
+/*function svuotaLista(){
+  let lista = document.getElementById("nonord");
+  lista.innerHTML = "";
+}*/
+
+/*41) Aggiungi un event listener in modo che compaia un alert 
+quando il cursore passa sopra un link; l'alert deve mostrare la sua proprietà href*/
+/*42) Crea un bottone che una volta cliccato nasconde ogni immagine nella pagina
+43) Crea un bottone che una volta cliccato nasconde o mostra la tabella nella pagina
+44) Crea una funzione per calcolare la somma di ogni numero contenuto in tutte le celle della tabella
+(se il contenuto è un numero)
+45) Cancella l'ultima lettera dal titolo della pagina ogni volta che l'utente ci clicca sopra
+46) Aggiungi un event listener in modo che cliccando un <td> nella pagina, questo cambi colore di sfondo
+47) Aggiungi un bottone che una volta cliccato elimini un <td> a caso nella tabella
+48) Aggiungi automaticamente un bordo rosa ad una cella della tabella quando il cursore ci passa sopra
+49) Scrivi una funzione per creare una tabella con 4 righe e 3 colonne e aggiungerla alla fine della pagina
+50) Scrivi una funzione per rimuovere l'ultima tabella presente nella pagina*/
+
+</script>
+
+</body>
+
+</html>
